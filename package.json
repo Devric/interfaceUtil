@@ -1,0 +1,14 @@
+{
+  "name": "cacheUtil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "gulp": "^3.8.10",
+    "mocha": "^2.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
