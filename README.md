@@ -59,8 +59,7 @@ InterfaceUtil will make sure you have these methods and params for each of the a
 	adapterB.prototype.flush = function set(key){}
 
 
-
-	// create the factory
+        // implement the interface to the adapters
 	// =============================
 	
 	// when user creating factories, they can override defaults settings
