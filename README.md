@@ -19,7 +19,7 @@ InterfaceUtil will make sure you have these methods and params for each of the a
 
 	// define interface
 	// =============================
-	var interface = {
+	var interfaceMethods = {
     	 'get'   : 'key'
 	   , 'set'   : 'key,val'
 	   , 'trash' : 'key'
