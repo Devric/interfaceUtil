@@ -1,5 +1,5 @@
 var expect          = require('chai').expect
-var createInterface = require('../src/interfaceUtil')
+var createInterface = require('../index')
 
 describe('createInterface', function() {
     it('should create a new function', function() {
