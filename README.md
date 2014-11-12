@@ -50,12 +50,16 @@ InterfaceUtil will make sure you have these methods and params for each of the a
 	
 	// constructor
         var someFn = new someFn()
-	var adapterB = function() {}
+        var adapterB = function() {
+            this.default = 1
+        }
 	adapterB.prototype.get = someFn.get
 	adapterB.prototype.set = someFn.set
 	adapterB.prototype.trash = someFn.remove
-	adapterB.prototype.flush = function set(key){}
-
+        adapterB.prototype.flush = function flush(key){
+            var _this = this
+            someFn.set(_this.default)
+        }
 
         // implement the interface to the adapters
 	// =============================
