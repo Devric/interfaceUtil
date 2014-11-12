@@ -35,27 +35,27 @@ InterfaceUtil will make sure you have these methods and params for each of the a
 	// =============================
 	
 	// constructor
-	var adapterA = function() {
+	var strategyA = function() {
 		this.storeOne = {}
 	}
-	adapterA.prototype.get = function get(key){
+	strategyA.prototype.get = function get(key){
 		if (key) return this.storeOne[key]
 		
 		// else return all
 		return this.storeOne
 	}
-	adapterA.prototype.set = function set(key,val){}
-	adapterA.prototype.trash = function set(key){}
-	adapterA.prototype.flush = function set(key){}
+	strategyA.prototype.set = function set(key,val){}
+	strategyA.prototype.trash = function set(key){}
+	strategyA.prototype.flush = function set(key){}
 	
 	// constructor
 	var adapterB = function() {
 		this.defaultThree = {}
 		this.defaultTwo = {}
 	}
-	adapterB.prototype.get = function get(key){}
-	adapterB.prototype.set = function set(key,val){}
-	adapterB.prototype.trash = function set(key){}
+	adapterB.prototype.get = someFn.get
+	adapterB.prototype.set = someFn.set
+	adapterB.prototype.trash = someFn.remove
 	adapterB.prototype.flush = function set(key){}
 
 
