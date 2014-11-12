@@ -49,10 +49,8 @@ InterfaceUtil will make sure you have these methods and params for each of the a
 	strategyA.prototype.flush = function set(key){}
 	
 	// constructor
-	var adapterB = function() {
-		this.defaultThree = {}
-		this.defaultTwo = {}
-	}
+        var someFn = new someFn()
+	var adapterB = function() {}
 	adapterB.prototype.get = someFn.get
 	adapterB.prototype.set = someFn.set
 	adapterB.prototype.trash = someFn.remove
